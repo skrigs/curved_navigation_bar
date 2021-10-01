@@ -19,12 +19,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
           key: _bottomNavigationKey,
           index: 0,
           height: 60.0,
-          items: <Widget>[
-            Icon(Icons.add, size: 30),
-            Icon(Icons.list, size: 30),
-            Icon(Icons.compare_arrows, size: 30),
-            Icon(Icons.call_split, size: 30),
-            Icon(Icons.perm_identity, size: 30),
+          items: <NavItem>[
+            NavItem(
+              widget: Icon(Icons.add, size: 30),
+            ),
+            NavItem(
+              widget: Icon(Icons.list, size: 30),
+            ),
+            NavItem(
+              widget: Icon(Icons.compare_arrows, size: 30),
+            ),
+            NavItem(
+              widget: Icon(Icons.call_split, size: 30),
+            ),
+            NavItem(
+              widget: Icon(Icons.perm_identity, size: 30),
+            ),
           ],
           color: Colors.white,
           buttonBackgroundColor: Colors.white,
