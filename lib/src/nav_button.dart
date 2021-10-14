@@ -16,7 +16,7 @@ class NavButton extends StatelessWidget {
   final int index;
   final ValueChanged<int> onTap;
   final Widget child;
-  final String? text;
+  final Text? text;
 
   @override
   Widget build(BuildContext context) {
@@ -47,10 +47,8 @@ class NavButton extends StatelessWidget {
                       child,
                       if (text != null)
                         Text(
-                          text!,
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
+                          text?.data??'',
+                          style: text?.style,
                         )
                     ],
                   ),

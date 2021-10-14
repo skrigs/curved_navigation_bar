@@ -21,22 +21,32 @@ class _BottomNavBarState extends State<BottomNavBar> {
           height: 60.0,
           items: <NavItem>[
             NavItem(
-              widget: Icon(Icons.add, size: 30),
+              widget: Icon(Icons.add, size: 30, color: Colors.white),
+              selectedWidget: Icon(Icons.add, size: 30, color: Colors.black),
+              text: Text('Add', style: TextStyle(color:Colors.white))
             ),
             NavItem(
-              widget: Icon(Icons.list, size: 30),
+              widget: Icon(Icons.list, size: 30, color: Colors.white),
+              selectedWidget: Icon(Icons.list, size: 30, color: Colors.black),
+              text: Text('List', style: TextStyle(color:Colors.white))
             ),
             NavItem(
-              widget: Icon(Icons.compare_arrows, size: 30),
+              widget: Icon(Icons.compare_arrows, size: 30, color: Colors.white),
+              selectedWidget: Icon(Icons.compare_arrows, size: 30, color: Colors.black),
+              text: Text('Compare', style: TextStyle(color:Colors.white))
             ),
             NavItem(
-              widget: Icon(Icons.call_split, size: 30),
+              widget: Icon(Icons.call_split, size: 30, color: Colors.white),
+              selectedWidget: Icon(Icons.call_split, size: 30, color: Colors.black),
+              text: Text('Split', style: TextStyle(color:Colors.white))
             ),
             NavItem(
-              widget: Icon(Icons.perm_identity, size: 30),
+              widget: Icon(Icons.perm_identity, size: 30, color: Colors.white),
+              selectedWidget: Icon(Icons.perm_identity, size: 30, color: Colors.black),
+              text: Text('Identity', style: TextStyle(color:Colors.white))
             ),
           ],
-          color: Colors.white,
+          color: Colors.black,
           buttonBackgroundColor: Colors.white,
           backgroundColor: Colors.blueAccent,
           animationCurve: Curves.easeInOut,
